@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+.container {
+    max-width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.wrap {
+    max-width: 1170px;
+    min-width: 280px;
+    margin: 0 auto;
+
+}
+@media (max-width: 1260px) {
+    .wrap {
+        max-width: 92%;
+    }
+}
+@media (max-width: 1024px) {
+    .wrap {
+        max-width: 944px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1000px) {
+    .wrap {
+        max-width: 92%;
+        overflow-x: hidden;
+    }
+}
+@media (max-width: 320px) {
+    .wrap {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}

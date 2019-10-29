@@ -1,0 +1,204 @@
+.footer {
+    /*height: 342px;*/
+    padding: 80px 0;
+    position: relative;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.footer__menu-item {
+    font-family: "robotoregular";
+    font-size: 18px;
+    font-weight: normal;
+    color: #8993ad;
+    margin-bottom: 11px;
+}
+.footer__menu-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #8993ad;
+}
+.footer__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 62px;
+}
+.footer__phone-number, .footer__email {
+    font-family: "robotoregular";
+    font-size: 25px;
+    font-weight: normal;
+    text-decoration: none;
+    margin-bottom: 13px;
+    color: #000000;
+}
+
+.fa-phone-alt, .fa-envelope {
+    background-image: linear-gradient( #ff2f96, #ff8f5a);
+    font-size: 20px;
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-right: 10px;
+}
+.footer__order-call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 45px;
+    margin-right: 20px;
+    /*margin-top: -4px;*/
+    font-family: "robotoregular";
+    font-size: 16px;
+    color: #ff6375;
+    border: 1px solid #ff5e79;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: visible;
+}
+.footer__icons {
+    display: flex;
+    align-items: flex-start;
+}
+.icon {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    height: 30px;
+    width: 40px;
+    background: url("../img/icons.png") no-repeat;
+    margin-right: 15px;
+}
+.vk {
+    background-position: 0 0;
+}
+.fb {
+    background-position: -55px 0;
+}
+.tw {
+    background-position: -105px 0;
+}
+.inst {
+    background-position: -163px 0;
+}
+.footer__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #31293c;
+    height: 80px;
+    font-family: robotoregular;
+    font-family: "robotoregular";
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+
+
+}
+@media (max-width: 880px) {
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        overflow: auto;
+        width: 600px;
+        flex-wrap: wrap;
+    }
+    .footer__right {
+         margin-top: 50px;
+
+     }
+
+    .footer__icons {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 450px) {
+    .footer__wrapper {
+        flex-direction: column;
+    }
+    .footer__center {
+        padding-left: 0;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 320px) {
+    .footer {
+        /*height: 500px;*/
+        padding: 46px 0 0;
+        box-sizing: border-box;
+    }
+    .footer__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 450px;
+        overflow: auto;
+    }
+    .footer__menu-item {
+        font-size: 15px;
+        margin-bottom: 11px;
+    }
+    .footer__phone-number, .footer__email {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .footer__center {
+        margin: 30px 0 27px;
+        padding-left: 0;
+        color: #8993ad;
+    }
+    .footer__copyright {
+        height: 50px;
+    }
+    .footer__center {
+        padding-left: 0;
+    }
+    .footer__email {
+        margin-bottom: 0;
+    }
+    .footer__order-call {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        height: 55px;
+        font-size: 16px;
+        background-color: #ff4e2e;
+        text-decoration: none;
+        font-family: "robotoregular";
+        font-size: 18px;
+        font-weight: normal;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+    }
+    .fa-phone-alt, .fa-envelope {
+        font-size: 12px;
+    }
+}
+
+
+
+

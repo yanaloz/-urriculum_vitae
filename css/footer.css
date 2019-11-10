@@ -47,7 +47,6 @@
     font-size: 20px;
     color: transparent;
     -webkit-background-clip: text;
-    margin-right: 10px;
 }
 .footer__order-call {
     display: flex;

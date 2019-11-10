@@ -383,19 +383,22 @@
     width: 1130px;
     margin: 0 auto;
 }
-/*.slider-item {*/
-    /*width: 370px;*/
-    /*height: 300px;*/
-/*}*/
+
 .slider-img {
-width: 370px;
-height: 300px;
+    width: 370px;
+    height: 300px;
+    border-bottom: 1px solid #dae3e8;
+    border-left: 1px solid #dae3e8;
 }
 .slider-img__title {
     padding: 30px;
     font-size: 20px;
     color: #8993ad;
     text-align: center;
+}
+.slider-link {
+    text-decoration: none;
+    outline: none;
 }
 .prev {
     background: url("../img/arrow.png") no-repeat;

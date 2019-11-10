@@ -9,9 +9,10 @@
 .header__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header__menu {
-    padding-top: 12px;
+    /*padding-top: 12px;*/
 }
 .menu-list {
     display: flex;
@@ -41,9 +42,33 @@
 }
 .header__toggle-menu {
     display: none;
+    cursor: pointer;
 }
-.fa-stack {
+.mobil-order-call {
     display: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-image: linear-gradient( #ff2f96, #ff8f5a);
+}
+.mobil-order-call__i {
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-phone, .fa-circle-thin {
+    background-image: linear-gradient( #ff2f96, #ff8f5a);
+    font-size: 20px;
+    color: transparent;
+    -webkit-background-clip: text;
 }
 .header__contacts {
     display: flex;
@@ -112,6 +137,9 @@
     .header__phone-number {
         font-size: 22px;
     }
+    .mobil-order-call {
+        display: flex;
+    }
 }
 @media (max-width: 320px) {
     .header {
@@ -125,15 +153,8 @@
     .icon_phone {
         display: block;
     }
-    .fa-circle-o {
-        background-image: linear-gradient( #ff2f96, #ff8f5a);
-        font-size: 40px;
-        color: transparent;
-        -webkit-background-clip: text;
-    }
-    .icon_phone_fa {
-        margin: 0;
-    }
+
+
     .header__phone-number {
         font-size: 18px;
     }

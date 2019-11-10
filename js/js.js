@@ -1,5 +1,4 @@
 function closePopup() {
-    // $('.call-form-wrapper').removeClass('call-form-flex');
     $('.order-call-form').parent().fadeOut(100);
     $('#overlay').remove('#overlay');
     $('body').css({'overflow': 'auto'});
@@ -30,6 +29,7 @@ $(function () {
         });
     })
 })
+
 $(function () {
     var flag = true;
     $('.header__toggle-menu').on('click', function () {

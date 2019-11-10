@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js" defer></script>
+    <script src="slick/slick.min.js" defer></script>
 </head>
 <body>
 <div class="container">
@@ -40,12 +40,12 @@
                 <button class="header__order-call order-call">
                     Заказать звонок
                 </button>
-
             </div>
-            <!--<div class="fa-stack">-->
-            <!--<i class="fa fa-phone-alt fa-stack-1x icon_phone_fa"></i>-->
-            <!--<i class="fa fa-circle-o  fa-stack-2x"></i>-->
-            <!--</div>-->
+            <div class="mobil-order-call order-call">
+               <div class="mobil-order-call__i">
+                    <i class="fa fa-phone"></i>
+               </div>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -131,14 +131,22 @@
                     Примеры моих работ
                 </h2>
                     <div class="multiple-items">
-                        <div class="slider-item"><img class="slider-img" src="img/img_sl_1.jpg" alt="">
-                            <p class="slider-img__title">Сайт психолога</p></div>
-                        <div class="slider-item"><img class="slider-img" src="img/img_sl_2.jpg" alt="">
-                            <p class="slider-img__title">Сайт магазина</p></div>
-                        <div class="slider-item"><img class="slider-img" src="img/img_sl_3.jpg" alt="">
-                            <p class="slider-img__title">Сайт сообщества</p></div>
-                        <div class="slider-item"><img class="slider-img" src="img/img_sl_4.jpg" alt="">
-                            <p class="slider-img__title">Интернет-магазин</p></div>
+                        <a href="#" class="slider-link">
+                            <div class="slider-item"><img class="slider-img" src="img/furkad.jpg" alt="">
+                                <p class="slider-img__title">Сайт фан-клуба</p></div>
+                        </a>
+                        <a href="#" class="slider-link">
+                            <div class="slider-item"><img class="slider-img" src="img/waxom.jpg" alt="">
+                                <p class="slider-img__title">Портфолио студии дизайна</p></div>
+                        </a>
+                        <a href="#" class="slider-link">
+                            <div class="slider-item"><img class="slider-img" src="img/news.jpg" alt="">
+                                <p class="slider-img__title">Новостная страница</p></div>
+                        </a>
+                        <a href="#" class="slider-link">
+                            <div class="slider-item"><img class="slider-img" src="img/products.jpg" alt="">
+                                <p class="slider-img__title">Макет лендинга</p></div>
+                        </a>
                     </div>
                 <button class="section__order-call order-call">Заказать проект</button>
                 </div>
@@ -165,13 +173,13 @@
     </main>
     <div class="call-form-wrap">
     <form class="order-call-form" method="post" action="#">
-        <h3 class="form-title">Свяжитесь с нами!</h3>
+        <h3 class="form-title">Заполните форму!</h3>
         <a class="close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-        <label for="name" class="form-text">Ваше имя:</label>
+        <label for="name" class="form-text">Ваше имя:</label><br>
         <input id="name" class="form-input" type="text" required><br>
         <label for="phone">Ваш телефон:</label>
         <input id="phone" pattern="^(\+?\d+)?\s*(\(\d+\))?[\s-]*([\d-]*)$" minlength="10" maxlength="18" class="form-input" required><br>
-        <label for="email" class="form-text">Адрес электронной почты:</label>
+        <label for="email" class="form-text">Ваш e-mail:</label>
         <input id="email" pattern="^(\S+)@([a-z0-9-]+)(\.)([a-z]{2,4})(\.?)([a-z]{0,4})+$" class="form-input" type="text" required><br>
         <label for="comment" class="form-text">Комментарий:</label>
         <textarea id="comment" class="form-area" name="comment"></textarea>
@@ -195,11 +203,11 @@
             </div>
             <div class="footer__center">
                 <a href="tel:89168848657" class="footer__phone-number">
-                    <i class="fas fa-phone-alt"></i>
+                    <i class="fa fa-phone-alt"></i>
                     8 (916) 884-86-57
                 </a>
                 <a class="footer__email" href=”mailto:yanaloz@yandex.ru”>
-                    <i class="fas fa-envelope"></i>
+                    <i class="fa fa-envelope"></i>
                     yanaloz@yandex.ru
                 </a>
             </div>

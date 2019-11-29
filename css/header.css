@@ -2,21 +2,34 @@
 .header {
     background-color: #fbfbfb;
     padding-top: 29px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     overflow: hidden;
 }
 .header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .header__menu {
-    /*padding-top: 12px;*/
 }
 .menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
 }
@@ -33,7 +46,11 @@
 .menu-list__link{
     color: #1f1f24;
     text-decoration: none;
+    -webkit-transition-property: color;
+    -o-transition-property: color;
     transition-property: color;
+    -webkit-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
     transition-duration: 300ms;
 }
 .menu-list__link:hover, .menu-list__link:active, .menu-list__link:focus {
@@ -49,9 +66,15 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border-radius: 50%;
+    background-image: -webkit-gradient( linear, left top, left bottom, from(#ff2f96), to(#ff8f5a));
+    background-image: -o-linear-gradient( #ff2f96, #ff8f5a);
     background-image: linear-gradient( #ff2f96, #ff8f5a);
 }
 .mobil-order-call__i {
@@ -59,19 +82,31 @@
     height: 85%;
     border-radius: 50%;
     background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .fa-phone, .fa-circle-thin {
+    background-image: -webkit-gradient( linear, left top, left bottom, from(#ff2f96), to(#ff8f5a));
+    background-image: -o-linear-gradient( #ff2f96, #ff8f5a);
     background-image: linear-gradient( #ff2f96, #ff8f5a);
     font-size: 20px;
     color: transparent;
     -webkit-background-clip: text;
 }
 .header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .header__phone-number {
@@ -84,8 +119,14 @@
 }
 
 .header__order-call {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 207px;
     height: 45px;
@@ -97,26 +138,20 @@
     border: 1px solid #f82370;
     cursor: pointer;
     text-decoration: none;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-
-
 @media (max-width: 1260px) {
-
 }
-
 @media (max-width: 1024px) {
     .header {
         padding-top: 33px;
         overflow: auto;
     }
-
-
     .menu-list {
         display: none;
     }
-
     .header__toggle-menu {
         display: block;
         background: none;
@@ -124,6 +159,8 @@
         outline: none;
     }
     .fa-bars {
+        background-image: -webkit-gradient( linear, left top, left bottom, from(#ff2f96), to(#ff8f5a));
+        background-image: -o-linear-gradient( #ff2f96, #ff8f5a);
         background-image: linear-gradient( #ff2f96, #ff8f5a);
         font-size: 30px;
         color: transparent;
@@ -138,6 +175,8 @@
         font-size: 22px;
     }
     .mobil-order-call {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 }
@@ -149,20 +188,15 @@
     .header__menu {
         padding-top: 0;
     }
-
     .icon_phone {
         display: block;
     }
-
-
     .header__phone-number {
         font-size: 18px;
     }
-
     .button-universal {
         width: 280px;
         height: 55px;
         font-size: 16px;
     }
-
 }
